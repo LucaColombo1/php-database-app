@@ -1,0 +1,20 @@
+{
+  "name": "PHP Development Environment",
+  "image": "mcr.microsoft.com/vscode/devcontainers/php:latest",
+  "features": {
+    "php": "latest",
+    "mysql": "8",
+    "postgresql": "latest"
+  },
+  "forwardPorts": [80, 3306, 5432],
+  "postCreateCommand": "composer install",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "php.validate.executablePath": "/usr/local/bin/php"
+  },
+  "extensions": [
+    "ms-php.php-debug",
+    "felixfbecker.php-intellisense",
+    "xdebug.php-debug"
+  ]
+}
